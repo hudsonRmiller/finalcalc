@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { useState, useEffect, useRef } from "react";
 
 const GRADE_THRESHOLDS = [
@@ -286,6 +287,7 @@ export default function App() {
         {/* AD SLOT 3 — bottom of page */}
         <AdSlot slot="AUTO" />
 
+        <Analytics />
         <div className="footer">built during finals week · good luck out there</div>
       </div>
     </>
